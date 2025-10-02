@@ -96,8 +96,8 @@ from pybricks.tools import wait, StopWatch
 #   r.robot.straight()
 #   r.robot.arc()
 #   r.robot.drive()
-TIRE_DIAMETER = 57  # mm
-AXLE_TRACK = 86  # distance between the wheels, mm
+TIRE_DIAMETER = 88  # mm
+AXLE_TRACK = 100  # distance between the wheels, mm
 STRAIGHT_SPEED = 400  # mm/sec
 STRAIGHT_ACCEL = 300  # mm/sec^2
 TURN_RATE = 300  # deg/sec
@@ -109,12 +109,12 @@ TURN_ACCEL = 200  # deg/sec^2
 # wired your robot.  If you don't have color sensor(s) or
 # attachment motor(s) you can comment them out.
 PORT_MAPPING = {
-    "ldm": Port.C,  # Left Drive Motor (Required)
-    "rdm": Port.D,  # Right Drive Motor (Required)
-    "lam": Port.F,  # Left Attachment Motor (Optional)
-    "ram": Port.E,  # Right Attachment Motor (Optional)
+    "ldm": Port.E,  # Left Drive Motor (Required)
+    "rdm": Port.F,  # Right Drive Motor (Required)
+    "lam": Port.D,  # Left Attachment Motor (Optional)
+    "ram": Port.C,  # Right Attachment Motor (Optional)
     #"lcs": Port.A,  # Left Color Sensor (Optional)
-    #"rcs": Port.B,  # Right Color Sensor (Optional)
+    "rcs": Port.A,  # Right Color Sensor (Optional)
 }
 #############################################
 # Define Brain Orientation
@@ -193,7 +193,9 @@ class robot:
         
         try:
             self.robot = DriveBase(self.ldm, self.rdm, TIRE_DIAMETER, AXLE_TRACK)
-            self.robot.use_gyro(True)
+#            self.robot.use_gyro(True)
+            self.robot.use_gyro(False)
+
         except:
             print("Drive base initialization error")
         

@@ -4,7 +4,7 @@
 # Description:
 # [Describe What your mission does here]
 #
-# Author(s): [Your Name(s)]
+# Author(s): Josie
 # Date: [YYYY-MM-DD]
 # Version: 1.0
 #
@@ -18,14 +18,19 @@ from pybricks.tools import wait, StopWatch
 
 def mission_two(r):
     print("Running Mission 2")
-    # Your code goes here...
-    # Sample code: Test Driving in a box
-    count = 0
-    while (count < 8):
-        r.robot.straight(500)
-        r.robot.turn(90)
-        wait(100)
-        count += 1
+    r.robot.straight(620)
+    r.robot.turn(30)
+    r.robot.straight(135)
+    r.robot.turn(-72)
+    r.robot.straight(155)
+    r.robot.turn(-45)
+    #r.robot.straight(170)
+   # r.robot.turn(-45)
+    #r.robot.turn(170#)
+    r.robot.straight(100)
+    r.robot.straight(-100)
+
+
 
 ################################
 # KEEP THIS AT THE END OF THE FILE
