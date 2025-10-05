@@ -2,9 +2,9 @@
 # mission_one.py
 #
 # Description:
-# [Describe What your mission does here]
+# unearthed multi mission
 #
-# Author(s): [Your Name(s)]
+# Author(s): Andreu, Jack
 # Date: [YYYY-MM-DD]
 # Version: 1.0
 #
@@ -31,21 +31,36 @@ def mission_one(r):
     # move from home  to silo
     r.robot.straight(425)     
     # chop the lever
-    for i in range(7):
-        r.ram.run_time(1300, 700)
-        r.ram.run_time(-1300, 700)
+    for i in range(4):
+        r.ram.run_time(1300, 590)
+        r.ram.run_time(-1300, 590)
 
     # start market stall mission
 
-    #turn left and proceed 20-30 cm
-    r.robot.turn(-65) 
-    r.robot.straight(250)
-
+    # turn left and proceed 20-30 cm
+    r.robot.turn(-55) 
+    r.robot.straight(280)
+   
     # slight turn to the left then push boom foward
-    
-    
+    r.robot.turn(-55)
+    r.robot.straight(200)
 
-#
+    # Drive to the rear of tip the scales 
+    r.robot.straight(280)
+    r.robot.turn(30)
+    r.robot.straight(150)
+    r.robot.turn(90)
+    r.robot.straight(320)
+    r.robot.turn(90)
+    r.robot.straight(50)
+    r.ram.run_time(1300, 590)
+    r.ram.run_time(-1300, 590)
+
+
+
+
+
+
 ################################
 # KEEP THIS AT THE END OF THE FILE
 # This redirects to running main.
