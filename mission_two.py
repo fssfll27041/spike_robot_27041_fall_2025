@@ -4,8 +4,8 @@
 # Description:
 # [Describe What your mission does here]
 #
-# Author(s): Josie Evelyn
-# Date: 2025-October-2nd
+# Author(s): Josie
+# Date: [YYYY-MM-DD]
 # Version: 1.0
 #
 # Dependencies:
@@ -24,11 +24,9 @@ def mission_two(r):
     r.robot.turn(-72)
     r.robot.straight(155)
     r.robot.turn(-45)
-
     #r.robot.straight(170)
    # r.robot.turn(-45)
     #r.robot.turn(170#)
-
     r.robot.straight(80)
     r.robot.straight(-80)
     r.robot.turn(60)

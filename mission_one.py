@@ -48,13 +48,17 @@ def mission_one(r):
     # Drive to the rear of tip the scales 
     r.robot.straight(280)
     r.robot.turn(30)
-    r.robot.straight(150)
-    r.robot.turn(90)
+    r.robot.straight(170)
+    r.robot.turn(80)
     r.robot.straight(320)
-    r.robot.turn(90)
-    r.robot.straight(50)
+    r.robot.turn(50)
+    r.robot.straight(60)
     r.ram.run_time(1300, 590)
     r.ram.run_time(-1300, 590)
+
+    # Go back to home
+    #remember to add turbo mode
+    r.robot.straight(-1000)
 
 
 
