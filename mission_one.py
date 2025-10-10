@@ -57,6 +57,7 @@ def mission_one(r):
     r.ram.run_time(-1300, 590)
 
     # Go back to home
+    r.robot.turn(-7)
     #remember to add turbo mode
     r.robot.straight(-1000)
 
