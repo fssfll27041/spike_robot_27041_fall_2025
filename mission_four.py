@@ -19,13 +19,15 @@ from pybricks.tools import wait, StopWatch
 def mission_four(r):
     print("Running Mission 4")
     # Your code goes here...
-    # Sample code: Test the speaker
-    notes = [
-    "E4/4_", "G4/4", "E4/4", "E4/4", "A4/4", "E4/4", "D4/4",
-    "E4/4_", "B4/4", "E4/4", "E4/4", "C4/4", "B3/4", "G3/4",
-    "E4/4", "B3/4", "E4/4", "E4/4", "D4/4", "D3/4", "B3/4", "F#3/4", "E3/2."
-    ]
-    r.hub.speaker.play_notes(notes,360)
+    # Sample code:
+
+    r.robot.straight(500)
+    r.ram.run_time(100,1000)
+    r.robot.straight(-70)
+    r.robot.turn(-90)
+    r.robot.straight(100)
+    r.robot.turn(70)
+    r.robot.straight(200)
 
 ################################
 # KEEP THIS AT THE END OF THE FILE
@@ -34,11 +36,3 @@ def mission_four(r):
 if __name__ == "__main__":
     from main import main
     main()
-
-    r.robot.straight(200)
-    r.ram.run_time(200,2000)
-    r.robot.straight(-70)
-    r.robot.turn(-90)
-    r.robot.straight(100)
-    r.robot.turn(90)
-    r.robot.straight(200)
