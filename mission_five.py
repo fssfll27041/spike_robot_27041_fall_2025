@@ -21,10 +21,16 @@ def mission_five(r):
     # Your code goes here...
     r.robot.straight(775)
     r.robot.turn(90)
-    r.robot.straight(400)
-    r.robot.turn(-100)
+    r.robot.straight(375)
+    r.robot.turn(-95)
     r.ram.run_time(1000,500)
-    r.robot.straight(200)
+    r.robot.straight(52)
+    r.robot.drive(10, 0)
+    r.ram.run_time(-100,1000)
+    wait(750)
+    r.robot.stop()
+    r.robot.turn(90)
+    r.robot.straight(400)
     
     
 
