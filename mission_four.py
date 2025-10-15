@@ -22,12 +22,17 @@ def mission_four(r):
     # Sample code:
 
     r.robot.straight(500)
-    r.ram.run_time(100,1000)
+    r.ram.run_time(100,750)
     r.robot.straight(-70)
-    r.robot.turn(-90)
+    r.robot.turn(-70)
     r.robot.straight(100)
     r.robot.turn(70)
-    r.robot.straight(200)
+    r.ram.run_time(-200,500)
+    r.robot.straight(450)
+    #r.robot.straight(-600)
+    r.robot.drive(-1000,-15)
+    wait(2000)
+    r.robot.stop()
 
 ################################
 # KEEP THIS AT THE END OF THE FILE
