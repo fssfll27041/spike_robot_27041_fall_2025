@@ -46,14 +46,14 @@ def mission_one(r):
     r.robot.straight(425)     
     # chop the lever
     for i in range(4):
-        r.ram.run_time(1300, 597)
-        r.ram.run_time(-1300, 597)
+        r.ram.run_time(1300, 600)
+        r.ram.run_time(-1300, 600)
 
     # start market stall mission
 
     # turn left and proceed 20-30 cm
     r.robot.turn(-55)
-    r.robot.straight(277)
+    r.robot.straight(275)
 
     # slight turn to the left then push boom foward
     r.robot.turn(-55)
@@ -67,11 +67,11 @@ def mission_one(r):
     r.robot.straight(320)
     r.robot.turn(50)
     r.robot.straight(60)
-    r.ram.run_time(1300, 590)
-    r.ram.run_time(-1300, 590)
+    r.ram.run_time(1300, 580)
+    r.ram.run_time(-1300, 580)
 
     # Go back to home
-    r.robot.turn(-7)
+    r.robot.turn(-5)
     # enable turbo mode
     r.robot.settings(1000, 1000, TURN_RATE, TURN_ACCEL)
     r.robot.straight(-1000)

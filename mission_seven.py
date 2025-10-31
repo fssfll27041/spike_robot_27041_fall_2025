@@ -35,4 +35,3 @@ if __name__ == "__main__":
     r.robot.straight(60)
     r.ram.run_time(-200,1000)
     r.robot.straight(-70)
-    
