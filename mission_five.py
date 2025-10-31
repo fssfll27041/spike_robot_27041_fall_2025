@@ -7,6 +7,15 @@
 # Author(s): Josie Evelyn
 # Date: [YYYY-MM-DD]
 # Version: 1.0
+################################################################################
+# mission_five.py
+#
+# Description:
+# [Describe What your mission does here]
+#
+# Author(s): Josie Evelyn
+# Date: [YYYY-MM-DD]
+# Version: 1.0
 #
 # Dependencies:
 # - robot
