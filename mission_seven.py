@@ -28,3 +28,10 @@ if __name__ == "__main__":
     from main import main
     main()
 
+    r.robot.straight(150)
+    r.robot.turn(-90)
+    r.robot.straight(340)
+    r.robot.turn(-90)
+    r.robot.straight(60)
+    r.ram.run_time(-200,1000)
+    r.robot.straight(-70)

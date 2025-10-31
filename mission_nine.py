@@ -19,10 +19,10 @@ from pybricks.tools import wait, StopWatch
 def mission_nine(r):
     print("Running Mission 9")
     # Your code goes here
-    r.robot.straight(390)
-    r.robot.straight(-390)
+    r.robot.straight(391)
+    r.robot.straight(-391)
 
-
+#position front third line lined up with front pushy thingy (remember that it is the black line underneath the red line) 
 
 
 

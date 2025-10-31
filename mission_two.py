@@ -15,7 +15,7 @@
 ################################################################################
 from robot import robot
 from pybricks.tools import wait, StopWatch
-
+#position edge of front pushy thingy should be line up with first yellow line in unearthed symbol (the one with gaps in it)
 def mission_two(r):
     print("Running Mission 2")
     r.robot.straight(620)
@@ -32,9 +32,8 @@ def mission_two(r):
     r.robot.turn(60)
     r.robot.straight(-340)
     r.robot.turn(-35)
-    r.robot.straight(-340)
-
-
+    r.robot.straight(-350)
+         #bee kind
 
 ################################
 # KEEP THIS AT THE END OF THE FILE
