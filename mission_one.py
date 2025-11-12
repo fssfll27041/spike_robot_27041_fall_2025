@@ -38,38 +38,42 @@ def mission_one(r):
     # ------------------------------------------------------
 
     # move from home to silo
-    r.robot.straight(415)     
+    r.robot.straight(405)     
     # chop the lever to eject frisbees
-     for i in range(4):
+    for i in range(4):
         r.ram.run_time(1300, 697)
+        r.robot.turn(2)
         r.ram.run_time(-1300, 697)
 
     # start market stall mission
     # turn left and proceed 20-30 cm
     r.robot.turn(-52)
-    r.robot.straight(275)
+    r.robot.straight(253)
 
     # slight turn to the left then push boom foward
     r.robot.turn(-55)
-    r.robot.straight(260)
+    r.robot.straight(285)
 
     # Drive to the rear of tip the scales using arc turn
-    r.robot.arc(200 , 100)
-    r.robot.straight(20)
-    r.robot.turn(80) 
-    r.robot.straight(90)
-    r.robot.turn(40)    
+    # r.robot.arc(200, 100)
+    r.robot.arc(250,120)
+    # r.robot.straight(120)
+    r.robot.turn(60) 
+    r.robot.straight(45)
+    # r.robot.turn(40)    
 
     # Wack raised basket
     r.ram.run_time(1300, 580)
     r.ram.run_time(-1300, 580)
 
     # Go back to home
-    r.robot.turn(-17)
+    r.robot.turn(-50)
     # enable turbo mode
     r.robot.settings(1000, 1000, TURN_RATE, TURN_ACCEL)
     # race backwards to home
-    r.robot.straight(-1000)
+    r.robot.drive(-1000, 30)
+    wait(2500)
+
 
     # disable turbo mode before other missions
     r.robot.stop()

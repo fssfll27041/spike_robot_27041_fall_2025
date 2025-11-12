@@ -14,7 +14,7 @@
 # [Describe What your mission does here]
 #
 # Author(s): Josie Evelyn
-# Date: [YYYY-MM-DD]
+# Date: [2025-11-8]
 # Version: 1.0
 #
 # Dependencies:
@@ -28,26 +28,35 @@ from pybricks.tools import wait, StopWatch
 def mission_five(r):
     print("Running Mission 5")
     # Your code goes here...
-    r.robot.straight(775)
+    r.robot.settings(600, 300, 300, 200)
+    r.robot.straight(745)
+    r.robot.settings(400, 300, 300, 200)
     r.robot.turn(90)
     r.robot.straight(390)
     r.robot.turn(-95)
     r.ram.run_time(1000,500)
     r.robot.straight(52)
-    r.robot.drive(10, 0)
-    r.ram.run_time(-100,1000)
-    wait(750)
+    r.robot.drive(30, 0)
+    r.ram.run_time(-300,1000)
+    wait(500)
     r.robot.stop()
     r.robot.straight(75)
     r.robot.turn(75)
-    r.robot.straight(700)
+    r.robot.settings(600, 300, 300, 200)
+    r.robot.straight(655)
     r.robot.turn(40)
     r.robot.straight(350)
-    r.robot.straight(-175)
+    r.robot.straight(-100)
     r.robot.turn(-30)
-    r.robot.straight(200)
-    r.robot.turn(30)
-    r.robot.straight(900)
+    r.robot.drive(1000,20)
+    wait(1000)
+    r.robot.drive(1000,-20)
+    wait(2000)
+    r.robot.stop()    
+    r.robot.settings(400, 300, 300, 200)
+   # r.robot.straight(200)
+    #r.robot.turn(30)
+    #r.robot.straight(900)
 
 ################################
 # KEEP THIS AT THE END OF THE FILE
