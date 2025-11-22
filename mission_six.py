@@ -4,8 +4,8 @@
 # Description:
 # [Describe What your mission does here]
 #
-# Author(s): [Your Name(s)]
-# Date: [YYYY-MM-DD]
+# Author(s): Josie Evelyn
+# Date: [2025-11-8]
 # Version: 1.0
 #
 # Dependencies:
@@ -16,21 +16,45 @@
 from robot import robot
 from pybricks.tools import wait, StopWatch
 
-# TODO get theses from robot.py
-TIRE_DIAMETER = 88  # mm
-AXLE_TRACK = 100  # distance between the wheels, mm
-STRAIGHT_SPEED = 400  # mm/sec
-STRAIGHT_ACCEL = 300  # mm/sec^2
-TURN_RATE = 300  # deg/sec
-TURN_ACCEL = 200  # deg/sec^2
-
 def mission_six(r):
     print("Running Mission 6")
-    self.robot.settings(1000, 1000, TURN_RATE, TURN_ACCEL)
-    r.robot.straight(1800)
-    r.robot.stop()
-    self.robot.settings(STRAIGHT_SPEED, STRAIGHT_ACCEL, TURN_RATE, TURN_ACCEL)
+    # Your code goes here...
 
+    r.robot.settings(700, 300, 300, 200)
+    r.robot.straight(700)
+    r.robot.drive(1000, 90)
+    wait(900) 
+    r.robot.straight(200)
+    r.robot.settings(400, 300, 300, 200)
+
+    #r.robot.turn(90)
+    """#r.robot.straight(390)
+    #r.robot.turn(-95)
+    #r.ram.run_time(1000,500)
+    #r.robot.straight(52)
+    r.robot.drive(30, 0)
+    r.ram.run_time(-300,1000)
+    wait(500)
+    r.robot.stop()
+    r.robot.straight(75)
+    r.robot.turn(75)
+    r.robot.settings(600, 300, 300, 200)
+    r.robot.straight(655)
+    r.robot.turn(40)
+    r.robot.straight(350)
+    r.robot.straight(-100)
+    r.robot.turn(-30)
+    r.robot.drive(1000,20)
+    wait(1000)
+    r.robot.drive(1000,-20)
+    wait(2000)
+    r.robot.stop()    
+    r.robot.settings(400, 300, 300, 200)
+    # r.robot.straight(200)
+    #r.robot.turn(30)
+    #r.robot.straight(900)
+    """
+   
 ################################
 # KEEP THIS AT THE END OF THE FILE
 # This redirects to running main.

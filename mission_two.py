@@ -31,17 +31,18 @@ def mission_two(r):
     r.robot.straight(130)
     r.robot.turn(-70)
     r.robot.straight(155)
+    r.robot.straight(100)
     r.robot.turn(-45)
-    #r.robot.straight(170)
-   # r.robot.turn(-45)
-    #r.robot.turn(170#)
+    # r.robot.straight(170)
+    # r.robot.turn(-45)
+    # r.robot.turn(170#)
     r.robot.straight(80)
     r.robot.straight(-15)
     r.robot.turn(60)
-    #r.robot.straight(-340)
-   # r.robot.turn(-35)
-  #  r.robot.straight(-350)
-         #bee kind
+    # r.robot.straight(-340)
+    # r.robot.turn(-35)
+    # r.robot.straight(-350)
+    # bee kind
  
     # enable turbo mode
     r.robot.settings(1000, 1000, TURN_RATE, TURN_ACCEL)
