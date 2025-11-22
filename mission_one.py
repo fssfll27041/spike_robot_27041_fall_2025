@@ -24,12 +24,6 @@ STRAIGHT_ACCEL = 300  # mm/sec^2
 TURN_RATE = 300  # deg/sec
 TURN_ACCEL = 200  # deg/sec^2
 
-    # r.robot.settings(1000, 1000, TURN_RATE, TURN_ACCEL)
-    # r.robot.straight(1800)
-    # r.robot.stop()
-    # r.robot.settings(STRAIGHT_SPEED, STRAIGHT_ACCEL, TURN_RATE, TURN_ACCEL)
-
-
 def mission_one(r):
     print("Running Mission 1")
 
@@ -39,7 +33,7 @@ def mission_one(r):
 
     # move from home to silo
     r.robot.straight(405)     
-    # chop the lever to eject frisbees
+    # chop the lever to eject food
     for i in range(4):
         r.ram.run_time(1300, 697)
         r.robot.turn(2)
@@ -55,13 +49,10 @@ def mission_one(r):
     r.robot.straight(285)
 
     # Drive to the rear of tip the scales using arc turn
-    # r.robot.arc(200, 100)
     r.robot.arc(250,120)
-    # r.robot.straight(120)
     r.robot.turn(60) 
-    r.robot.straight(45)
-    # r.robot.turn(40)    
-
+    r.robot.straight(45)   
+    
     # Wack raised basket
     r.ram.run_time(1300, 580)
     r.ram.run_time(-1300, 580)
@@ -73,7 +64,6 @@ def mission_one(r):
     # race backwards to home
     r.robot.drive(-1000, 30)
     wait(2500)
-
 
     # disable turbo mode before other missions
     r.robot.stop()
