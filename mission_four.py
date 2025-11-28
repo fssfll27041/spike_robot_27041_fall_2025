@@ -19,20 +19,29 @@ from pybricks.tools import wait, StopWatch
 def mission_four(r):
     print("Running Mission 4")
     # Your code goes here...
-    # Sample code:
+    # gerald heavy lifting code:
 
-    r.robot.straight(500)
-    r.ram.run_time(100,750)
-    r.robot.straight(-70)
-    r.robot.turn(-70)
-    r.robot.straight(100)
+    r.robot.straight(670)
+    # should be 90
     r.robot.turn(70)
-    r.ram.run_time(-200,500)
-    r.robot.straight(450)
-    #r.robot.straight(-600)
-    r.robot.drive(-1000,-15)
+    r.robot.straight(390)
+    # should be -110
+    r.robot.turn(-90)
+    r.ram.run_time(200,2000)
+    # should be 130
+    r.robot.straight(195)
+   # r.ram.run_time(200,2000)
+    r.ram.run_time(-200,2000)
+   # r.robot.straight(-320)
+    r.robot.drive(-500,10)
     wait(2000)
     r.robot.stop()
+
+
+
+
+
+    
 
 ################################
 # KEEP THIS AT THE END OF THE FILE

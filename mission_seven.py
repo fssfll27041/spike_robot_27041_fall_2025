@@ -5,7 +5,8 @@
 # [Describe What your mission does here]
 #
 # Author(s): [Your Name(s)]
-# Date: [YYYY-MM-DD]
+# Date: 
+#[YYYY-MM-DD]
 # Version: 1.0
 #
 # Dependencies:
@@ -19,6 +20,18 @@ from pybricks.tools import wait, StopWatch
 def mission_seven(r):
     print("Running Mission 7")
     # Your code goes here...
+    r.robot.straight(500)
+    r.ram.run_time(100,750)
+    r.robot.straight(-70)
+    r.robot.turn(-70)
+    r.robot.straight(100)
+    r.robot.turn(70)
+    r.ram.run_time(-200,500)
+    r.robot.straight(450)
+    #r.robot.straight(-600)
+    r.robot.drive(-1000,-15)
+    wait(2000)
+    r.robot.stop()
 
 ################################
 # KEEP THIS AT THE END OF THE FILE
@@ -27,11 +40,3 @@ def mission_seven(r):
 if __name__ == "__main__":
     from main import main
     main()
-
-    r.robot.straight(150)
-    r.robot.turn(-90)
-    r.robot.straight(340)
-    r.robot.turn(-90)
-    r.robot.straight(60)
-    r.ram.run_time(-200,1000)
-    r.robot.straight(-70)
