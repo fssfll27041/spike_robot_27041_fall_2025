@@ -2,10 +2,10 @@
 # mission_two.py
 #
 # Description:
-# [Describe What your mission does here]
+# Release the ore from the forge and the who lived here mission
 #
-# Authors: Josie  Evelyn
-# Date: [2025-10-1]
+# Author(s): Josie  Evelyn
+# Date: [2025-10-01
 # Version: 1.0
 #
 # Dependencies:
@@ -24,41 +24,37 @@ def mission_two(r):
     TURN_RATE = 300  # deg/sec
     TURN_ACCEL = 200  # deg/sec^2
 
-
     print("Running Mission 2")
+    # Driving to the forge
     r.robot.straight(620)
     r.robot.turn(30)
     r.robot.straight(133)
+
+    # Hit the forge to get 30 points
     r.robot.turn(-73)
-    r.robot.straight(155)
-    r.robot.straight(100)
-    r.robot.turn(-45)
-    # r.robot.straight(170)
-    # r.robot.turn(-45)
-    # r.robot.turn(170#)
-    r.robot.straight(80)
+    r.robot.straight(130)
+
+    # Driving to "who lived here" and flipping the table
+    r.robot.drive(100,-45)
+    wait(850)
+    r.robot.stop()
+
+    # backing up and heading home
     r.robot.straight(-15)
     r.robot.turn(60)
-    # r.robot.straight(-340)
-    # r.robot.turn(-35)
-    # r.robot.straight(-350)
-    # bee kind
  
     # enable turbo mode
-    r.robot.settings(1000, 1000, TURN_RATE, TURN_ACCEL)
+    r.robot.settings(700, 300, TURN_RATE, TURN_ACCEL)
+    
     # race backwards to home
-    r.robot.drive(-1000, -30)
-    wait(2500)
-
-
+    r.robot.drive(-1000,-20)
+    wait(1750)
+    
     # disable turbo mode before other missions
     r.robot.stop()
     r.robot.settings(STRAIGHT_SPEED, STRAIGHT_ACCEL, TURN_RATE, TURN_ACCEL)
-
-################################
-# KEEP THIS AT THE END OF THE FILE
-# This redirects to running main.
-################################
+    
+    #Home sweet home
 if __name__ == "__main__":
     from main import main
     main()

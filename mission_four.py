@@ -2,10 +2,10 @@
 # mission_four.py
 #
 # Description:
-# Push bolders/ Collect millistone
-# 
-# Authors: Eleanor Andreu Jack
-# Date: 2025-11-22
+# [Describe What your mission does here]
+#
+# Author(s): [Your Name(s)]
+# Date: [YYYY-MM-DD]
 # Version: 1.0
 #
 # Dependencies:
@@ -18,25 +18,35 @@ from pybricks.tools import wait, StopWatch
 
 def mission_four(r):
     print("Running Mission 4")
- 
+    # Your code goes here...
     # gerald heavy lifting code:
 
-    # Drive forward past the silo and push the ore out of bounds
     r.robot.straight(670)
+    # should be 90
     r.robot.turn(70)
     r.robot.straight(390)
-
-    # Drive to millstone and pick it up using the amazing comb
-    r.robot.turn(-95)
+    # should be -110
+    r.robot.turn(-90)
     r.ram.run_time(200,2000)
+    # should be 130
     r.robot.straight(195)
+   # r.ram.run_time(200,2000)
     r.ram.run_time(-200,2000)
-
-    # Return to home, arcing a bit to avoid the wall
+   # r.robot.straight(-320)
     r.robot.drive(-500,10)
     wait(2000)
     r.robot.stop()
 
+
+
+
+
+    
+
+################################
+# KEEP THIS AT THE END OF THE FILE
+# This redirects to running main.
+################################
 if __name__ == "__main__":
     from main import main
     main()
