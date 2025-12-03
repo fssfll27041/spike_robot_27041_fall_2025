@@ -4,8 +4,8 @@
 # Description:
 # [Describe What your mission does here]
 #
-# Author(s): Josie  Evelyn
-# Date: [YYYY-MM-DD]
+# Authors: Josie  Evelyn
+# Date: [2025-10-1]
 # Version: 1.0
 #
 # Dependencies:
