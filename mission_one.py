@@ -4,8 +4,8 @@
 # Description:
 # unearthed multi silo / mahket basket/five below/
 #
-# Author(s): Andreu, Jack
-# Date: [YYYY-MM-DD]
+# Authors: Andreu, Jack
+# Date: 2025-10-01
 # Version: 1.0
 #
 # Dependencies:
@@ -40,11 +40,11 @@ def mission_one(r):
         r.ram.run_time(-1300, 697)
 
     # start market stall mission
-    # turn left and proceed 20-30 cm
+    # turn left and proceed forward
     r.robot.turn(-52)
     r.robot.straight(253)
 
-    # slight turn to the left then push boom foward
+    # slight turn to the left then push boom forward
     r.robot.turn(-55)
     r.robot.straight(285)
 
@@ -58,7 +58,7 @@ def mission_one(r):
     r.ram.run_time(-1300, 580)
 
     # Go back to home
-    r.robot.turn(-50)
+    r.robot.turn(-30)
     # enable turbo mode
     r.robot.settings(1000, 1000, TURN_RATE, TURN_ACCEL)
     # race backwards to home

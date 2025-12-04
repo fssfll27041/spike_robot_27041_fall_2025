@@ -5,7 +5,7 @@
 # Release the ore from the forge and the who lived here mission
 #
 # Author(s): Josie  Evelyn
-# Date: [2025-10-01
+# Date: 2025-10-01
 # Version: 1.0
 #
 # Dependencies:
@@ -15,7 +15,8 @@
 ################################################################################
 from robot import robot
 from pybricks.tools import wait, StopWatch
-#position edge of front pushy thingy should be line up with first yellow line in unearthed symbol (the one with gaps in it)
+# position edge of front pushy thingy should be line up with first yellow line 
+# in unearthed symbol (the one with gaps in it)
 def mission_two(r):
     TIRE_DIAMETER = 88  # mm
     AXLE_TRACK = 100  # distance between the wheels, mm
@@ -54,7 +55,7 @@ def mission_two(r):
     r.robot.stop()
     r.robot.settings(STRAIGHT_SPEED, STRAIGHT_ACCEL, TURN_RATE, TURN_ACCEL)
     
-    #Home sweet home
+    # Home sweet home
 if __name__ == "__main__":
     from main import main
     main()

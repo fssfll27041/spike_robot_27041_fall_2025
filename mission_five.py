@@ -14,7 +14,7 @@
 # [Describe What your mission does here]
 #
 # Author(s): Josie Evelyn
-# Date: [2025-11-8]
+# Date: 2025-11-08
 # Version: 1.0
 #
 # Dependencies:
@@ -54,7 +54,7 @@ def mission_five(r):
     wait(2000)
     r.robot.stop()    
     r.robot.settings(400, 300, 300, 200)
-   # r.robot.straight(200)
+    #r.robot.straight(200)
     #r.robot.turn(30)
     #r.robot.straight(900)
 
