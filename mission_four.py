@@ -22,14 +22,18 @@ def mission_four(r):
     # gerald heavy lifting code:
 
     # Drive forward past the silo and push the ore out of bounds
-    r.robot.straight(670)
+    r.robot.straight(695)
     r.robot.turn(70)
-    r.robot.straight(390)
-
+    r.robot.straight(350)
+    r.robot.drive(300,-110)
+    wait(870)
+    r.robot.stop()
     # Drive to millstone and pick it up using the amazing comb
-    r.robot.turn(-95)
-    r.ram.run_time(200,2000)
-    r.robot.straight(195)
+   # r.robot.turn(-75)
+   # r.ram.run_time(200,2000)
+    r.robot.straight(40)
+    r.robot.turn(-37)
+    r.robot.straight(20)
     r.ram.run_time(-200,2000)
 
     # Return to home, arcing a bit to avoid the wall

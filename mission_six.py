@@ -33,12 +33,12 @@ def mission_six(r):
 
     # Raises the market stall roof, 20 points
     r.robot.straight(400)
-    r.robot.straight(-300)
-    r.robot.turn(-45)
+    r.robot.straight(-200)
+    r.robot.turn(-55)
 
     # Do a fast S-turn all the way back to home 
-    r.robot.drive(1000,41)
-    wait(550)
+    r.robot.drive(1000,25)
+    wait(2000)
     r.robot.drive(1000,-20)
     wait(2000)
     r.robot.stop()    

@@ -2,11 +2,10 @@
 # mission_seven.py
 #
 # Description:
-# [Describe What your mission does here]
+# Completes the salvage operation mission
 #
-# Author(s): [Your Name(s)]
-# Date: 
-#[YYYY-MM-DD]
+# Author(s): Eleanor
+# Date: 2025-11-28
 # Version: 1.0
 #
 # Dependencies:
@@ -19,16 +18,20 @@ from pybricks.tools import wait, StopWatch
 
 def mission_seven(r):
     print("Running Mission 7")
-    # Your code goes here...
+
+    # drives to the salvage operation mission and knocks the sand off
     r.robot.straight(500)
     r.ram.run_time(100,750)
     r.robot.straight(-70)
+
+    # turns to go push the ship
     r.robot.turn(-70)
     r.robot.straight(100)
     r.robot.turn(70)
     r.ram.run_time(-200,500)
     r.robot.straight(450)
-    #r.robot.straight(-600)
+
+    # goes back to home
     r.robot.drive(-1000,-15)
     wait(2000)
     r.robot.stop()
