@@ -50,8 +50,8 @@ def mission_one(r):
 
     # Drive to the rear of tip the scales using arc turn
     r.robot.arc(250,120)
-    r.robot.turn(60) 
-    r.robot.straight(45)   
+    r.robot.turn(37) 
+    r.robot.straight(55)   
     
     # Wack raised basket
     r.ram.run_time(1300, 580)

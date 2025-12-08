@@ -38,7 +38,7 @@ def mission_six(r):
 
     # Do a fast S-turn all the way back to home 
     r.robot.drive(1000,25)
-    wait(2000)
+    wait(2300)
     r.robot.drive(1000,-20)
     wait(2000)
     r.robot.stop()    

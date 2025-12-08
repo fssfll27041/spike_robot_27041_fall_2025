@@ -42,14 +42,14 @@ def mission_two(r):
 
     # backing up and heading home
     r.robot.straight(-15)
-    r.robot.turn(60)
+    r.robot.turn(75)
  
     # enable turbo mode
     r.robot.settings(700, 300, TURN_RATE, TURN_ACCEL)
     
     # race backwards to home
     r.robot.drive(-1000,-20)
-    wait(1750)
+    wait(2000)
     
     # disable turbo mode before other missions
     r.robot.stop()
