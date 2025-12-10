@@ -19,7 +19,7 @@ def mission_six(r):
 
     # Drive forward, and gracefully s-turn to the mineshaft
     r.robot.settings(700, 300, 300, 200)
-    r.robot.straight(677)
+    r.robot.straight(687)
     r.robot.drive(1000,93)
     wait(970)
 
@@ -40,7 +40,7 @@ def mission_six(r):
     r.robot.drive(1000,25)
     wait(2300)
     r.robot.drive(1000,-20)
-    wait(2000)
+    wait(1000)
     r.robot.stop()    
     r.robot.settings(400, 300, 300, 200)
 
