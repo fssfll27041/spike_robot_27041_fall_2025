@@ -23,15 +23,18 @@ def mission_four(r):
     r.robot.settings(700, 300, 300, 200)
     r.robot.straight(200)
     r.robot.drive(225,45)
-    wait(1000)
+    wait(950)
     r.robot.drive(225,-45)
     wait(1250)
     r.robot.stop()
-    r.robot.straight(300)
-    r.robot.drive(225,-45)
-    wait(1000)
+    r.robot.straight(200)
     r.ram.run_time(200,2000)
+    r.robot.drive(235,-45)
+    wait(1000)
+    r.robot.stop()
+    r.ram.run_time(-200,2000)
     r.robot.straight(-200)
+
 
 if __name__ == "__main__":
     from main import main
