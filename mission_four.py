@@ -18,18 +18,35 @@ from pybricks.tools import wait, StopWatch
 
 def mission_four(r):
     print("Running Mission 4")
- 
+    
     # Revised millstone mission from qualifier
+    # r.robot.straight(95)
+    # r.robot.turn(45)
+    # r.robot.straight(220)
+    # r.robot.turn(-45)
+    # r.robot.straight(570)
+    # r.robot.turn(-45)
+    # r.ram.run_time(200,2000)
+    # r.robot.straight(200)
+    # r.ram.run_time(-200,2000)
+    # r.robot.straight(-200)
 
-    r.robot.straight(95)
-    r.robot.turn(45)
-    r.robot.straight(220)
-    r.robot.turn(-45)
-    r.robot.straight(570)
-    r.robot.turn(-45)
-    r.ram.run_time(200,2000)
+
+
+
+
+
+    r.robot.settings(700, 300, 300, 200)
     r.robot.straight(200)
-    r.ram.run_time(-200,2000)
+    r.robot.drive(225,45)
+    wait(1000)
+    r.robot.drive(225,-45)
+    wait(1250)
+    r.robot.stop()
+    r.robot.straight(300)
+    r.robot.drive(225,-45)
+    wait(1000)
+    r.ram.run_time(200,2000)
     r.robot.straight(-200)
 
     # Return to home, arcing a bit to avoid the wall
