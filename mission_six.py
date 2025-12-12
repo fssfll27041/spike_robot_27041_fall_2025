@@ -28,7 +28,7 @@ def mission_six(r):
     r.ram.run_time(-200,1000)
     
     # Drive over to the market stall
-    r.robot.straight(580)
+    r.robot.straight(590)
     r.robot.turn(45)
 
     # Raises the market stall roof, 20 points
